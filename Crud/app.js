@@ -74,23 +74,23 @@ class song {
     const updatedNombre = prompt(
       "Ingrese el nuevo nombre de la canción:",
       songToEdit.nombre
-    );
+    ).toLowerCase();
     const updatedAutor = prompt(
       "Ingrese el nuevo autor de la canción:",
       songToEdit.autor
-    );
+    ).toLowerCase();
     const updatedCategoria = prompt(
       "Ingrese la nueva categoria:",
       songToEdit.categoria
-    );
+    ).toLowerCase();
     const updatedDuracion = prompt(
       "Ingrese la nueva duración:",
       songToEdit.duracion
-    );
+    ).toLowerCase();
     const updatedImagen = prompt(
       "Ingrese la nueva URL de la portada del álbum:",
       songToEdit.imagen
-    );
+    ).toLowerCase();
   
     songToEdit.nombre = updatedNombre;
     songToEdit.autor = updatedAutor;
