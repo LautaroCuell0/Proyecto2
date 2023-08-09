@@ -12,18 +12,22 @@
   function alertMonth(){
      listaMeses.forEach(listaMeses=>listaMeses.listaMonth())
   }
+
+  function longitudMonth(){
+    console.log()
+  }
  
 
 
-//  let ciudadesAgr = [];
+  let ciudadesAgr = [];
 
-//  function agregarCiudades(){
-//      let ciudades = prompt('ingresa ciudades').toLocaleLowerCase()
-//      ciudadesAgr.push(ciudades)
-//      alert('se agregado al ciudad')
+  function agregarCiudades(){
+      let ciudades = prompt('ingresa ciudades').toLocaleLowerCase()
+      ciudadesAgr.push(ciudades)
+      alert('se agregado al ciudad')
 
-//  }
+  }
 
-//  function mostrarCiudades(){
-//      alert(`las ciudades agregadas son: ${ciudadesAgr.join('\n')}`)
-//  }
+  function mostrarCiudades(){
+      alert(`las ciudades agregadas son: ${ciudadesAgr.join('\n')}`)
+  }

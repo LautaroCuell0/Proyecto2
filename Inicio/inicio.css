@@ -1,0 +1,105 @@
+body{
+    background-color: #A71B31;
+}
+.cover-login{
+    position: absolute;
+    right: 120px;
+}
+.login {
+    background-color: #DECBA7;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 50px;
+    align-items: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #000;
+    gap: 10px;
+}
+
+.login button{
+    
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    font-size: 15px;
+}
+.cover-img{
+    display: flex;
+    justify-content: center;
+    background-color: #941121;
+    flex-direction: column;
+    border-radius: 0 0 100% 100%;
+}
+
+.logo-img {
+    display: flex;
+    justify-content: center;
+}
+.logo-img img{
+    width: 300px;
+}
+
+.menu ul{
+    align-items: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-style: italic;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    font-size: medium;
+    color: #DECBA7;
+}
+
+.menu input{
+    border-radius: 20px;
+    color: #941121;
+    width: 100px;
+}
+
+.cover-card{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.card{
+    width: 200px;
+    background-color: #DECBA7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.img-card img{
+    width: 200px;   
+}
+
+.cover-icons button{
+    background-color: #DECBA7;
+    border-color: #DECBA7;
+    gap: 30px;
+    border-radius: 50px;
+}
+
+.button-fav{
+    padding: 10px 12px;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    font-size: 25px;
+}
