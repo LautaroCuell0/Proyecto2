@@ -4,10 +4,16 @@
 }
 .div-padre-error{
     height: 100vh;
+    width: auto;    
 }
+.div-texto-error{
+    width: auto;
+    height: auto;
+}
+
 .titulo-error{
     color: #941121;
-    font-size: 8rem;
+    font-size: 800%;
     font-weight: 700;
 }
 .texto-error{
@@ -17,16 +23,27 @@
     border-radius: 20px;
     background-color: #941121;
     color: #dfcca6;
-    border: none;
-    padding-inline: 12%;
+    border: 1px solid #941121;
+    padding-inline: 15%;
     padding-block: 3%;
+    
 }
 .btn-error:hover{
     background-color:#dfcca6;
     color: #941121;
     border: 1px solid #941121;
-    animation: none;
+    transition: 0.2s; 
+}
+.div-imagen-error{
+    margin-left: 100px;
 }
 .imagen-error{
     width: 85%;
+}
+
+
+
+
+@media (max-width:568px){
+    
 }
