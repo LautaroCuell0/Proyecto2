@@ -1,57 +1,12 @@
 body{
     background-color: #A71B31;
 }
-.cover-login{
+
+/* imagen y boton registro */
+.button-user{
     position: absolute;
-    right: 120px;
-}
-.login {
-    background-color: #DECBA7;
-    width: 100px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    margin-left: 30px;
-    border-radius: 50px;
-    align-items: center;
-    margin-top: 20px;
-    font-style: italic;
-    color: #000;
-    gap: 10px;
-}
-
-.login button{
-    
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: none;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    font-size: 15px;
-}
-.cover-img{
-    display: flex;
-    justify-content: center;
-    background-color: #941121;
-    flex-direction: column;
-    border-radius: 0 0 100% 100%;
-}
-
-.logo-img {
-    display: flex;
-    justify-content: center;
-}
-.logo-img img{
-    width: 300px;
-}
-
-.menu ul{
-    align-items: center;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    font-style: italic;
-    list-style: none;
+    right: 0;
+    padding: 20px;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Mukta', sans-serif;
     font-family: 'Nunito', sans-serif;
@@ -59,21 +14,79 @@ body{
     font-family: 'Poiret One', cursive;
     font-family: 'Righteous', cursive;
     font-family: 'Vesper Libre', serif;
-    font-size: medium;
-    color: #DECBA7;
 }
 
-.menu input{
-    border-radius: 20px;
-    color: #941121;
+.button-user button{
+    background-color: #DECBA7;
+    border-radius: 15px;
+    height: 40px;
     width: 100px;
+    border: #00FFFFFF;
 }
+
+.logo{
+    display: flex;
+    justify-content: center;
+    background-color: #941121;
+    align-items: center;
+}
+.logo img{
+     width: 300px;
+}
+
+/* menu */
+.login-desplegable{
+    display: none;
+}
+.navbar{
+    background-color: #941121;
+    border-radius: 0 0 100% 100%;
+    height: 70px;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    color: #DECBA7;
+    font-size: large;
+}
+
+
+.abrir, .cerrar{
+    height: 40px;
+    width: 40px;
+    display: none;
+    background-color: #A71B31;
+    border-radius: 100%;
+    border: #00FFFFFF;
+}
+
+.abrir img{
+    width: 30px;
+}
+
+/* molde cards */
 
 .cover-card{
     display: flex;
     justify-content: center;
     margin: 20px;
 }
+
 .card{
     width: 200px;
     background-color: #DECBA7;
@@ -102,4 +115,60 @@ body{
     border: 0;
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     font-size: 25px;
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    .abrir, .cerrar{
+        display: block;
+    }
+
+    .navbar{
+        opacity: 0;
+        visibility: hidden;
+
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        gap: 10px;
+        top: 0;
+        right: 0;
+        height: 400px;
+        background-color: #efe5cd;
+        padding: 30px;
+        border-radius: 30px;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    }
+
+     .navbar.visible{
+        opacity: 1;
+        visibility: visible;
+     }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        color: #A71B31;
+    }
+
+    .button-user{
+            display: none;
+    }
+    .login-desplegable{
+        display: block;
+        background-color: #DECBA7;
+        border-radius: 15px;
+        height: 40px;
+        width: 100px;
+        border: #00FFFFFF;
+        color: #A71B31;
+    }
+
+    .logo{
+        border-radius: 0 0 100% 100%;
+        height: 130px;
+    }
+
 }
