@@ -116,8 +116,44 @@ body{
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     font-size: 25px;
 }
+/* footer */
+.cover-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000;
+    padding: 20px;
+}
 
+.line{
+    width: 4px;
+    height: 120px;
+    background-color: #fff;
+}
 
+.footer-logo img{
+    width: 200px;
+}
+
+.link-footer ul{
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    color: #fff;
+    font-size: large;
+    
+}
+.link-footer li{
+    margin-top: 10px;
+}
+/* HAMBURGUESA MENU */
 @media screen and (max-width: 700px) {
     
     .abrir, .cerrar{
