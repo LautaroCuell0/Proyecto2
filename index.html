@@ -4,30 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="shortcut icon" href="/imgs-inicio/logo-2-removebg-preview (1).png">
     <!-- link css -->
     <link rel="stylesheet" href="/Inicio/inicio.css">
     <!-- link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Mukta&family=Nunito+Sans:wght@900&family=Nunito:ital,wght@0,300;1,500&family=Poiret+One&family=Righteous&family=Vesper+Libre:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Mukta&family=Nunito+Sans:wght@900&family=Nunito:ital,wght@0,300;1,500&family=Poiret+One&family=Righteous&family=Vesper+Libre:wght@500&display=swap" rel="stylesheet">
     <!-- link icons -->
     <script src="https://kit.fontawesome.com/85493bdd25.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <div class="login">LOGIN  <i class="fa-solid fa-user"></i></div> -->
-    <div class="cover-login">
-        <button class="login">LOGIN  <i class="fa-solid fa-user"></i></button>
+    <!-- img logo y boton user -->
+    <header>
+    <div class="button-user">
+        <button>LOGIN <i class="fa-solid fa-user"></i></button>
     </div>
-    <div class="cover-img">
-    <div class="logo-img"><img src="/imgs-inicio/logo 1.jpeg" alt=""></div>
-    <div class="menu" style="text-decoration: none;"><ul>
-        <li>INICIO  </i></li>
-        <li>NOSOTROS  </i></li>
-        <li>FAVORITOS </i></li>
-        <li><i class="fa-solid fa-magnifying-glass"></i></li>
-    </ul></div>
-    </div>
+   <div class="logo">
+    <img src="/imgs-inicio/logo 1.jpeg" alt="">
+    <button id="abrir" class="abrir" ><img src="/imgs-inicio/menu.png" alt=""></i></button>
+   </div>
+
+
+
+   <!-- menu -->
+   <nav class="navbar" id="nav">
+    <button id="cerrar" class="cerrar" ><i class="fa-solid fa-x"></i></button>
+    <button class="login-desplegable">LOGIN <i class="fa-solid fa-user"></i></button></button>
     
+    <ul class="nav-list">
+        <li>INICIO</li>
+        <li>FAVORITOS</li>
+        <li>NOSOTROS</li>
+    </ul>
+   </nav>
+   </head>
+   <!-- creacion de la card, este es el molde -->
     <div class="cover-card">
     <div class="card">
         <div class="img-card"><img src="/imgs-inicio/Igor_-_Tyler,_the_Creator.jpg" alt=""></div>
@@ -38,5 +50,23 @@
     </div>
     </div>
 
+   <!-- footer -->
+   <div class="cover-footer">
+    <div class="footer-logo">
+        <img src="/imgs-inicio/logo-2-removebg-preview (1).png" alt="">
+    </div>
+    <div class="line">
+          
+    </div>
+    <div class="link-footer">
+        <ul>
+            <li>INICIO</li>
+            <li>NOSOTROS</li>
+            <li>FAVORITOS</li>
+        </ul>
+    </div>
+   </div>
+    <!-- link js -->
+    <script src="/Inicio/menu.js"></script>
 </body>
 </html>
