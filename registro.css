@@ -57,7 +57,7 @@
 
 
 .labelRegistrarse{
-    color: #d0b686;
+    color: #DECBA7;
     list-style: none;
     font-style: italic;
     font-family: 'Montserrat', sans-serif;
@@ -91,6 +91,18 @@
 
 .parrafoRegistroFinalizar:hover{
     color: white;
+}
+
+.parrafoOlvidasteContra{
+    color: #DECBA7;
+}
+.parrafoOlvidasteContra:hover{
+    color: #a88f60;
+}
+
+.etiquetaIniciarSesion{
+    text-decoration: none;
+
 }
 
 @media (max-width: 575.98px) { 
