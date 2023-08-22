@@ -1,0 +1,129 @@
+.modal-header{
+    background-color: #DECBA7;
+}
+
+.modal-body{
+    background-color: #A71B31;
+
+}
+
+
+.btn-close:hover{
+    background-color: #A71B31;
+}
+
+.fotoLogoModal{
+    width: 200px;
+    border-radius: 35px;
+}
+
+.contenedordeRegistrarse{
+    padding: 3px 17px 3px 17px;
+}
+
+
+.logoIS{
+    height: 4vh;
+    padding-right: 11px;
+}
+
+.parrafoRegistrarse{
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    font-size: small;
+}
+
+.botonRegistrarse{
+    background-color: #DECBA7;
+    border: none;
+    color: black;
+    border-radius: 35px;
+}
+
+.botonRegistrarse:hover{
+    background-color: #d0b686;
+}
+
+.lineaSeparadora{
+    color: #676060;
+}
+
+
+.labelRegistrarse{
+    color: #DECBA7;
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    font-size: medium;
+    width: 16vw;
+}
+
+.inputDatos{
+    width: 20vw;
+    height: 4vh;
+    border-radius: 35px;
+    background-color: #120c0158;
+    border: none;
+}
+
+.checkRegistrarse{
+    color: #DECBA7;
+}
+
+
+.parrafoRegistroFinalizar{
+    color: #A71B31;
+    font-size: large;
+}
+
+.parrafoRegistroFinalizar:hover{
+    color: white;
+}
+
+.parrafoOlvidasteContra{
+    color: #DECBA7;
+}
+.parrafoOlvidasteContra:hover{
+    color: #a88f60;
+}
+
+.etiquetaIniciarSesion{
+    text-decoration: none;
+
+}
+
+@media (max-width: 575.98px) { 
+    .lineaSeparadoraParrafo{
+        display: none;
+    }
+    .fotoLogoModal{
+        width: 200px;
+    }
+    .inputDatos{
+        width: 30vw;
+
+    }
+ }
+
+ @media (max-width: 760px){
+    .fotoLogoModal{
+        width: 200px;
+    }
+    .inputDatos{
+        width: 30vw;
+
+    }
+ }
