@@ -112,10 +112,18 @@
     .fotoLogoModal{
         width: 200px;
     }
+    .inputDatos{
+        width: 30vw;
+
+    }
  }
 
  @media (max-width: 760px){
     .fotoLogoModal{
         width: 200px;
+    }
+    .inputDatos{
+        width: 30vw;
+
     }
  }

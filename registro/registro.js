@@ -15,11 +15,11 @@ const usuarios = [
 
 function iniciarSesion(event){
     event.preventDefault();
-    const email = document.getElementById("datoInciarSesion");
-    const contraseña = docu.getElementById("contraseñaIniciarSesion");
+    const email = document.getElementById("datoInciarSesion").value;
+    const contraseña = document.getElementById("contraseñaIniciarSesion").value;
     console.log(email)
     console.log(contraseña)
-    const buscarUsuario = users.find(user => user.email == email);
+    const buscarUsuario = usuarios.find(user => user.email == email);
     if(buscarUsuario){
         const contraCorrecta = buscarUsuario.contraseña == contraseña;
         if(contraCorrecta){
@@ -31,5 +31,6 @@ function iniciarSesion(event){
     }
 
     document.querySelector('form').reset()
+   
 }
 
