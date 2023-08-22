@@ -82,13 +82,31 @@ body{
     background: #A71B31 !important;
 }
 .tituloSobreNos{
-   font-size: 70px;
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    font-size: large;
    color: #000000;
    text-shadow: 4px 4px 2px rgb(255, 255, 255);
    transition: text-shadow 0.5s ease;
 }
 .parrafo{
-    font-size: 40px;
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    font-size: large;
     color: rgb(0, 0, 0) ;
     text-shadow:4px 4px 2px rgb(255, 255, 255);
     transition: text-shadow 0.5s ease;
