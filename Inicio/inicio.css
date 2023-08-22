@@ -208,3 +208,24 @@ body{
     }
 
 }
+
+@media screen and (max-width: 430px){
+    .footer-logo img{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .cover-footer{
+        display: flex;
+         flex-direction: column;
+         justify-content: center;
+    }
+
+    .line{
+        width: 120px;
+        height: 4px;
+    }
+
+    
+}
