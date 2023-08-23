@@ -8,6 +8,7 @@
 
     <!-- link css -->
     <link rel="stylesheet" href="/Inicio/inicio.css">
+    <link rel="stylesheet" href="/registro/registro.css">
     <!-- link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +16,17 @@
     
     <!-- link icons -->
     <script src="https://kit.fontawesome.com/85493bdd25.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!-- img logo y boton user -->
     <header>
     <div class="button-user">
-        <button>LOGIN <i class="fa-solid fa-user"></i></button>
-        <button>SIGNUP<i class="fa-solid fa-user"></i></button>
+        <a href="/registrarse/login.html"><button>LOGIN <i class="fa-solid fa-user"></i></button></a>
+        <a href="/registrarse/registro.html"><button>SIGNUP<i class="fa-solid fa-user"></i></button></a>
     </div>
    <div class="logo">
-    <img src="/imgs-inicio/logo 1.jpeg" alt="">
+    <a href="/index.html"><img src="/imgs-inicio/logo 1.jpeg" alt=""></a>
     <button id="abrir" class="abrir" ><img src="/imgs-inicio/menu.png" alt=""></i></button>
    </div>
 
@@ -37,9 +39,9 @@
     <button class="login-desplegable">SIGN UP <i class="fa-solid fa-user"></i></button></button>
     
     <ul class="nav-list">
-        <li>INICIO</li>
-        <li>FAVORITOS</li>
-        <li>NOSOTROS</li>
+        <a href="/index.html" style="text-decoration: none; color:  #DECBA7;"><li>INICIO</li></a>
+        <a href="" style="text-decoration: none; color:  #DECBA7;"><li>FAVORITOS</li></a>
+        <a href="/Pag.Nos/nos.html" style="text-decoration: none; color:  #DECBA7;"><li>NOSOTROS</li></a>
     </ul>
    </nav>
    </head>
@@ -73,7 +75,9 @@
    </div>
     <!-- link js -->
     <script src="/Inicio/menu.js"></script>
+    <script src="/registro/registro.js"></script>
     <!-- link bosotrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     
 </body>
 </html>
