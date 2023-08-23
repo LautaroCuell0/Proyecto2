@@ -164,7 +164,6 @@ body{
     .navbar{
         opacity: 0;
         visibility: hidden;
-
         flex-direction: column;
         align-items: end;
         position: absolute;
@@ -172,7 +171,7 @@ body{
         top: 0;
         right: 0;
         height: 400px;
-        background-color: #efe5cd;
+        background-color: #A71B31;
         padding: 30px;
         border-radius: 30px;
         box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
@@ -187,7 +186,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: end;
-        color: #A71B31;
+        color: #DECBA7;
     }
 
     .button-user{
@@ -200,7 +199,7 @@ body{
         height: 40px;
         width: 100px;
         border: #00FFFFFF;
-        color: #A71B31;
+        color: black;
     }
 
     .logo{

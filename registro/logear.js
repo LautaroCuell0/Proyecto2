@@ -24,6 +24,7 @@ function iniciarSesion(event){
         const contraCorrecta = buscarUsuario.contraseña == contraseña;
         if(contraCorrecta){
             alert("entro coreec")
+            window.location.assign(window.location.origin + '/index.html')
         }
         else{
             alert("datos inco")

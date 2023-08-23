@@ -19,7 +19,7 @@ function guardarUsuariosEnLocalStorage() {
      event.preventDefault();
      const email = document.getElementById("email").value;
      const contraseña = document.getElementById("password").value;
-     const buscarUsuario = usuarios.find(user => user.email == email);
+     const buscarUsuario = usuarios?.foreach(user => user.email == email);
      if(buscarUsuario){
          const contraCorrecta = buscarUsuario.contraseña == contraseña;
          if(contraCorrecta){
