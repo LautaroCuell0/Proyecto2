@@ -11,3 +11,4 @@ cerrar.addEventListener('click', ()=>{
     nav.classList.remove('visible')
 }
 )
+
