@@ -30,9 +30,30 @@ function registrarse (event){
     usuarios.push(new registro (email,usuario, password, repPassword))
     guardarUsuariosEnLocalStorage()
     document.querySelector('form').reset()
-   //  window.location.assign(window.location.origin + '/index.html')
 }
 
 console.log(usuarios)
+
+
+function iniciarSesion(event){
+   event.preventDefault();
+   const email = document.getElementById("datoInciarSesion").value;
+   const contraseña = document.getElementById("contraseñaIniciarSesion").value;
+   console.log(email)
+   console.log(contraseña)
+   const buscarUsuario = usuarios?.forEach(user => user.email == email);
+   if(buscarUsuario){
+       const contraCorrecta = buscarUsuario.contraseña == contraseña;
+       if(contraCorrecta){
+           alert("BIENVENIDO 😀")
+           window.location.assign(window.location.origin + '/index.html')
+       }
+       else{
+           alert("datos incorrectos, vuelve a intentar")
+       }
+   }
+
+   document.querySelector('form').reset()
+}
 
 

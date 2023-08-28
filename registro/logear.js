@@ -23,15 +23,17 @@ function iniciarSesion(event){
     if(buscarUsuario){
         const contraCorrecta = buscarUsuario.contraseña == contraseña;
         if(contraCorrecta){
-            alert("entro coreec")
+            alert("BIENVENIDO 😀")
             window.location.assign(window.location.origin + '/index.html')
         }
         else{
-            alert("datos inco")
+            alert("datos incorrectos, vuelve a intentar")
         }
     }
 
     document.querySelector('form').reset()
    
 }
+
+
 
