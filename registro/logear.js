@@ -10,7 +10,6 @@ class Usuario{
 const usuarios = [
     new Usuario(parseInt(Math.random()), "agustinaP", "pucharra81@gmail.com", 1234),
     new Usuario(parseInt(Math.random()), "aguP", "puchar@gmail.com", 123456)
-
 ]
 
 function iniciarSesion(event){
