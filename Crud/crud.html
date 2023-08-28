@@ -3,23 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/Inicio/inicio.css">
+    <!-- link boostrap   -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Document</title>
+     <!-- link bosotrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>CRUD</title>
+    <link rel="shortcut icon" href="/imgs-inicio/logo-2-removebg-preview (1).png">
 </head>
 <body>
+
+  <!-- img logo y boton user -->
+  <header>
+   <div class="logo">
+    <a href="/index.html"><img src="/imgs-inicio/logo 1.jpeg" alt=""></a>
+    <button id="abrir" class="abrir" ><img src="/imgs-inicio/menu.png" alt=""></i></button>
+   </div>
+
+
+</nav>
+   </head>
+
+<div class="cover-crud">
+
     <div class="container">
         
         <div>
-            <button class="btn btn-primary mt-1" onclick="addSong()">Agregar cancion</button>
+            <button class="btn btn-primary mt-1" id="boton-agregar" onclick="addSong()">Agregar cancion</button>
             <div class="contenido">
 
             </div>
         </div>
     </div>
 
+</div>
 
 
+   <!-- footer -->
+   <div class="cover-footer">
+    <div class="footer-logo">
+        <img src="/imgs-inicio/logo-2-removebg-preview (1).png" alt="">
+    </div>
+    <div class="line">
+          
+    </div>
+    <div class="link-footer">
+        <ul>
+            <li>INICIO</li>
+            <li>NOSOTROS</li>
+            <li>FAVORITOS</li>
+        </ul>
+    </div>
+   </div>
 
     <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

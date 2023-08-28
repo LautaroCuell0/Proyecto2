@@ -27,6 +27,9 @@ function registrarse (event){
     let usuario = document.getElementById('user').value
     let password = document.getElementById('password').value;
     let repPassword = document.getElementById('rep-password').value
+    if(password!==repPassword){
+        alert('las contraseñas no coinciden')
+    }
     usuarios.push(new registro (email,usuario, password, repPassword))
     guardarUsuariosEnLocalStorage()
     document.querySelector('form').reset()

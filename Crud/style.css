@@ -1,3 +1,6 @@
+.cover-crud{
+  background-color: #DECBA7;
+}
 .contenedor {
     display: flex;
     justify-content: space-between;
@@ -9,14 +12,33 @@
   .caja {
     flex: 1;
     height: 90%;
-    background-color: rgb(247, 155, 155);
+    background-color: #A71B31;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
     font-weight: bold;
+    padding: 5px;
   }
   .fotos{
     height: 100%;
     width: 50%;
+  }
+
+  #boton-agregar{
+    background-color: #A71B31;
+    border: #00FFFFFF;
+    border-radius: 50px;
+    gap: 20px;
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    color: #DECBA7;
+    font-size: large;
   }

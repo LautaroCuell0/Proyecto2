@@ -9,7 +9,7 @@ class song {
     }
 }
 
-let songList=[
+let songList= [
     new song("Nombre", "Autor", "Album","3:29","3524","https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9f/e4/4b/9fe44b3f-0138-8301-1a13-ae9cc7409571/197187668199.jpg/1200x1200bf-60.jpg"),
     new song("Nombre","Autor","Disco","10:00","12345","https://yt3.googleusercontent.com/csT1zuQU13zkLlGx0rfeBNiemt4BnzRW1tujMd9OfzOnC2LxDHtVvw8rODkaC16i8Ngyq-uenuwK=s576")
 ];
@@ -25,6 +25,8 @@ function addSong(){
     let newsong={nombre,autor,album,duracion,idunico,imagen}
     songList.push(newsong)
     rendersongs()
+
+    console.log(songList)
 
 }
 function rendersongs(){
