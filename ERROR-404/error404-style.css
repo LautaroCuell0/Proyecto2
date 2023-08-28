@@ -1,5 +1,15 @@
 *{
-    font-family: 'PT Sans', sans-serif;
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    color: #DECBA7;
+    font-size: large;
     background-color: #dfcca6;
 }
 .div-padre-error{
