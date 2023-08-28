@@ -1,0 +1,22 @@
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+  }
+
+  .caja {
+    flex: 1;
+    height: 90%;
+    background-color: rgb(247, 155, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+  }
+  .fotos{
+    height: 100%;
+    width: 50%;
+  }

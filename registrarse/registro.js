@@ -41,7 +41,7 @@ function iniciarSesion(event){
    const contraseña = document.getElementById("contraseñaIniciarSesion").value;
    console.log(email)
    console.log(contraseña)
-   const buscarUsuario = usuarios?.forEach(user => user.email == email);
+   const buscarUsuario = usuarios.find(user => user.email == email);
    if(buscarUsuario){
        const contraCorrecta = buscarUsuario.contraseña == contraseña;
        if(contraCorrecta){
