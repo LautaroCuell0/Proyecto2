@@ -1,64 +1,50 @@
-.cover-crud{
+.cover-crud {
   background-color: #DECBA7;
+  height: 6vh;
+
 }
+
 .contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    height: 150px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /*width: 100%;*/
+  height: 10vh;
+  margin-bottom: 3vh;
+  background-color: #941121;
+}
 
-  .caja {
-    flex: 1;
-    height: 90%;
-    background-color: #A71B31;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-weight: bold;
-    padding: 5px;
-  }
-  .fotos{
-    height: 70%;
-    width: 50%;
-  }
+.caja {
+  flex: 1;
+  /*height: 5vh;*/
+  /*width: 13vw;*/
+  background-color: #941121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
 
-  #boton-agregar{
-    background-color: #A71B31;
-    border: #00FFFFFF;
-    border-radius: 50px;
-    gap: 20px;
-    list-style: none;
-    font-style: italic;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Mukta', sans-serif;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Poiret One', cursive;
-    font-family: 'Righteous', cursive;
-    font-family: 'Vesper Libre', serif;
-    color: #DECBA7;
-    font-size: large;
-  }
+.fotos {
+  height: 100%;
+  width: 80px;
+}
 
-  @media screen and (max-width: 990px){
-    .fotos {
-      height: 40%;
-    }
-  }
-
-  @media screen and (max-width: 770px){
-    .fotos {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 510px){
-    .caja{
-      display: flex;
-      flex-direction: column;
-    }
-    
-  }
+#boton-agregar {
+  background-color: #A71B31;
+  border: #00FFFFFF;
+  border-radius: 50px;
+  gap: 20px;
+  list-style: none;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mukta', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Righteous', cursive;
+  font-family: 'Vesper Libre', serif;
+  color: #DECBA7;
+  font-size: large;
+}
