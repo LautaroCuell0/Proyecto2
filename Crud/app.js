@@ -10,22 +10,7 @@ class song {
   }
   
   let songList = [
-    new song(
-      "Nombre",
-      "Autor",
-      "categoria",
-      "3:29",
-      "3524",
-      "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9f/e4/4b/9fe44b3f-0138-8301-1a13-ae9cc7409571/197187668199.jpg/1200x1200bf-60.jpg"
-    ),
-    new song(
-      "Nombre",
-      "Autor",
-      "categoria",
-      "10:00",
-      "12345",
-      "https://yt3.googleusercontent.com/csT1zuQU13zkLlGx0rfeBNiemt4BnzRW1tujMd9OfzOnC2LxDHtVvw8rODkaC16i8Ngyq-uenuwK=s576"
-    ),
+   
   ];
   rendersongs();
   
@@ -65,23 +50,24 @@ class song {
     });
   }
 
-
-     
+//se crea la funcion para borrar elementos de la lista
   
+    function deleteSong(idunico) {
+      const songIndex = songList.findIndex((song) => song.idunico == idunico);
       
-  
-  function deleteSong(idunico) {
-    //console.log(idunico)
-    const songIndex = songList.findIndex((song) => song.idunico == idunico);
-    //console.log(songIndex)
-  
-    if (songIndex !== -1) {
-      songList.splice(songIndex, 1);
-      rendersongs();
-      saveSongListToLocalStorage();
+      if (songIndex !== -1) {
+        const confirmation = confirm("¿Estás seguro de que deseas eliminar esta canción?");
+        
+        if (confirmation) {
+          songList.splice(songIndex, 1);
+          rendersongs();
+          saveSongListToLocalStorage();
+        }
+      }
     }
-  }
   
+
+  // se crea la funcion para editar los elementos de la lista
   function editSong(idunico) {
     const songToEdit = songList.find((song) => song.idunico == idunico);
   

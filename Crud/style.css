@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 150px;
   }
 
@@ -21,7 +21,7 @@
     padding: 5px;
   }
   .fotos{
-    height: 100%;
+    height: 70%;
     width: 50%;
   }
 
@@ -41,4 +41,24 @@
     font-family: 'Vesper Libre', serif;
     color: #DECBA7;
     font-size: large;
+  }
+
+  @media screen and (max-width: 990px){
+    .fotos {
+      height: 40%;
+    }
+  }
+
+  @media screen and (max-width: 770px){
+    .fotos {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 510px){
+    .caja{
+      display: flex;
+      flex-direction: column;
+    }
+    
   }
