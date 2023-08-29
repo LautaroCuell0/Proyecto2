@@ -80,31 +80,30 @@ class song {
   }
 
 
-    // let padreCard = document.querySelector('.creadorCard')
-    // padreCard.innerHTML = '';
-    // songList.forEach((song)=>{
-
-    //     let newCard = document.createElement('div')
-    //     newCard.id = song.idunico;
-    //     newCard.classList.add('cover-card')
-    //     newCard.style.width = '100%';
-    //     newCard.style.height = '40px';
-    //     newCard.innerHTML = `
-    //     <div class="cover-card" id="main">
-    //     <div class="card">
-    //         <div class="img-card"><img src="${songList.imagen}" alt=""></div>
-    //         <div class="cover-icons">
-      
-    //             <a href="/ERROR-404/error404.html"><button class="button-fav"><i class="fa-solid fa-play"></i></i></button></a>
-    //             <button class="button-fav"><i class="fa-solid fa-heart"></i></i></button>
-    //         </div>
-    //     </div>
-    //     </div> 
-    //     `
-    //   let padreCard = document.querySelector('.creadorCard')
-    //   padreCard.appendChild(newCard)
-    // }
-    // )
+  function allSongs() {
+    songList.forEach((song) => {
+      let newCard = document.createElement('div')
+      newCard.id = song.idunico;
+      newCard.classList.add('cover-card')
+      newCard.style.width = '100%';
+      newCard.style.height = '40px';
+      newCard.innerHTML = `
+              <div class="cover-card" id="main">
+              <div class="card">
+                  <div class="img-card"><img src="${songList.imagen}" alt=""></div>
+                  <div class="cover-icons">
+                      <a href="/ERROR-404/error404.html"><button class="button-fav"><i class="fa-solid fa-play"></i></i></button></a>
+                      <button class="button-fav"><i class="fa-solid fa-heart"></i></i></button>
+                  </div>
+              </div>
+              </div>
+              `
+      let padreCard = document.querySelector('.creadorCard')
+      padreCard.appendChild(newCard)
+    }
+    )
+  }
+  allSongs()
   let canciones = JSON.parse(localStorage.getItem('songList'))||[
         
   ]
