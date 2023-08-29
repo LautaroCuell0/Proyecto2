@@ -36,24 +36,10 @@ class song {
       rendersongs(); // Volver a renderizar la lista desde Local Storage
   }
   
-  //AGREGAR CANCIONES POR PROMPT
-  /* function addSong(){
-      let nombre=prompt("Ingrese el nombre de la cancion:")
-      let autor=prompt("Ingrese el autor de la cancion:")
-      let categoria=prompt("Ingrese la categoria:")
-      let duracion=prompt("Ingrese la duracion:")
-      let idunico=Date.now()
-      let imagen=prompt("Ingrese la url de la portada del album:")
-  
-      let newsong={nombre,autor,categoria,duracion,idunico,imagen}
-      songList.push(newsong)
-      rendersongs()
-  
-  } */
   
   function rendersongs() {
-    // const padreContainer = document.querySelector(".contenido");
-    // padreContainer.innerText = "";
+     const padreContainer = document.querySelector(".contenido");
+     padreContainer.innerText = "";
     songList.forEach((song) => {
       //crear el elemento
   
@@ -80,60 +66,6 @@ class song {
   }
 
 
-  function allSongs() {
-    songList.forEach((song) => {
-      let newCard = document.createElement('div')
-      newCard.id = song.idunico;
-      newCard.classList.add('cover-card')
-      newCard.style.width = '100%';
-      newCard.style.height = '40px';
-      newCard.innerHTML = `
-              <div class="cover-card" id="main">
-              <div class="card">
-                  <div class="img-card"><img src="${songList.imagen}" alt=""></div>
-                  <div class="cover-icons">
-                      <a href="/ERROR-404/error404.html"><button class="button-fav"><i class="fa-solid fa-play"></i></i></button></a>
-                      <button class="button-fav"><i class="fa-solid fa-heart"></i></i></button>
-                  </div>
-              </div>
-              </div>
-              `
-      let padreCard = document.querySelector('.creadorCard')
-      padreCard.appendChild(newCard)
-    }
-    )
-  }
-  allSongs()
-  let canciones = JSON.parse(localStorage.getItem('songList'))||[
-        
-  ]
-
-  function renderCards(){
-    storedSongList?.forEach(cards =>{
-    console.log('entro')
-    let newCard = document.createElement('div')
-         newCard.id = song.idunico;
-         newCard.classList.add('cover-card')
-         newCard.style.width = '100%';
-         newCard.style.height = '40px';
-         newCard.innerHTML = `
-         <div class="cover-card" id="main">
-         <div class="card">
-             <div class="img-card"><img src="${songList.imagen}" alt=""></div>
-             <div class="cover-icons">
-      
-                 <a href="/ERROR-404/error404.html"><button class="button-fav"><i class="fa-solid fa-play"></i></i></button></a>
-                 <button class="button-fav"><i class="fa-solid fa-heart"></i></i></button>
-             </div>
-         </div>
-         </div> 
-         `
-       let padreCard = document.querySelector('.creadorCard')
-       padreCard.appendChild(newCard)
-     })
-    
-    }
-    renderCards()
      
   
       

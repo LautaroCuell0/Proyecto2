@@ -30,6 +30,10 @@ body{
     background-color: #941121;
     align-items: center;
 }
+
+.logo button{
+    background-color: #941121;
+}
 .logo img{
      width: 265px;
 }
@@ -90,7 +94,8 @@ body{
 }
 
 .card{
-    width: 200px;
+    width: 150px;
+    height: 200px;
     background-color: #DECBA7;
     display: flex;
     justify-content: center;
@@ -101,7 +106,7 @@ body{
 }
 
 .img-card img{
-    width: 200px;   
+    width: 150px;   
 }
 
 .cover-icons button{
