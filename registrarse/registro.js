@@ -1,8 +1,7 @@
-
-
  //cramos una clase para crear elementos
  class registro  {
-    constructor ( email, usuario, password, repPassword){
+    constructor (id, email, usuario, password, repPassword){
+       this.id= id;
        this.email = email;
        this.usuario = usuario;
        this.password = password;
@@ -12,7 +11,7 @@
 
 //array de objetos crados a partir de la clase registro
 let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [
-       
+    new registro(parseInt(Math.random()), "agustinaP", "pucharra81@gmail.com", 1234),
    ];
 
 
@@ -23,19 +22,25 @@ function guardarUsuariosEnLocalStorage() {
 //subo los nuevos elementos al array
 function registrarse (event){
    event.preventDefault()
+    let idUnico = Date.now()
     let email = document.getElementById('email').value;
     let usuario = document.getElementById('user').value
     let password = document.getElementById('password').value;
     let repPassword = document.getElementById('rep-password').value
     if(password!==repPassword){
+        
         alert('las contraseñas no coinciden')
-    }
-    usuarios.push(new registro (email,usuario, password, repPassword))
+        return
+    } 
+    usuarios.push()
     guardarUsuariosEnLocalStorage()
     document.querySelector('form').reset()
+    console.log(usuarios)
+    window.location.assign(window.location.origin + '/index.html')
+    alert(`BIENVENIDO 😀`)
 }
 
-console.log(usuarios)
+
 
 
 function iniciarSesion(event){
