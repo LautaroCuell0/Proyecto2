@@ -1,0 +1,222 @@
+
+
+/* nosotros */
+body{
+    background: #A71B31 !important;
+}
+.tituloSobreNos{
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    font-size: large;
+   color: #000000;
+   text-shadow: 4px 4px 2px rgb(255, 255, 255);
+   transition: text-shadow 0.5s ease;
+}
+.parrafo{
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    font-size: large;
+    color: rgb(0, 0, 0) ;
+    text-shadow:4px 4px 2px rgb(255, 255, 255);
+    transition: text-shadow 0.5s ease;
+}
+.Nombres{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px 2px rgb(255, 255, 255);
+    transition: text-shadow 0.5s ease;
+
+}
+.imagenSobreNos{
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    border-radius: 50px;
+    
+}
+
+.cover-integrantes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    color: black;
+    font-size: large;
+}
+
+.container-presentacion{
+    display: flex;
+    justify-content: center;  
+}
+.container-presentacion p{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    color: black;
+    font-size: large;
+    width: 700px;
+}
+
+.cover-integrantes{
+    gap: 10px;
+}
+.card-presentacion{
+    width: 250px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: #DECBA7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.img-card{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+/* ayuda*/
+.cover-contacto{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.contacto{
+    background-color: #DECBA7;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.h1-contacto h1 {
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+}
+
+.contacto-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.contacto-email label{
+    list-style: none;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    color: black;
+    font-size: large;
+}
+
+.contacto-email input{
+    border-radius: 50px;
+    height: 30px;
+    background-color: #941121;
+    border: #00FFFFFF;
+}
+
+.contacto-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.contacto-texto textarea{
+    border-radius: 50px;
+    height: 60px;
+    background-color: #941121;
+    border: #00FFFFFF;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vesper Libre', serif;
+    font-size: large;
+}
+
+.contacto-texto button{
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    background-color: #A71B31;
+    color: #DECBA7;
+    border: #00FFFFFF;
+
+}
+
+@media (max-width: 820px){
+    .container-presentacion p {
+        width: 500px;
+    }
+}
+
+@media (max-width: 580px){
+    .container-presentacion p {
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px){
+    .container-presentacion p {
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px){
+    .contacto{
+        width: 400px;
+    }
+}
+

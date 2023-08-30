@@ -1,0 +1,30 @@
+*{
+    background-color: #A71B31;
+}
+#tarjetasfavid{
+    display: flex;
+    justify-content: space-around;
+}
+#cards-favoritos{
+    background-color: #A71B31;
+    border:3px solid #DECBA7;
+}
+.h1-info-favs{
+    color: #DECBA7;
+}
+p{
+    color: #DECBA7;
+}
+.cover-info-fav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+@media (max-width:1200px) {
+    #tarjetasfavid{
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+

@@ -1,0 +1,32 @@
+*{
+    background-color:  #A71B31;
+}
+.img-detalles{
+    width: 300px;
+    height: 300px;
+}
+.div-img-detalles{
+    margin-bottom: 2%;
+}
+.texto-detalle{
+    opacity: 0.6;
+}
+.div-padre-detalles{
+    height: 100vh;
+    width: 100vw;
+}
+#btn-detalles-volver{
+    color: #DECBA7;
+    border:solid 1px #DECBA7;
+    border-radius: 10px;
+    padding-inline: 30px;
+    padding-block: 8px;
+}
+#btn-detalles-volver:hover{
+    color: #A71B31;
+    background-color: #DECBA7;
+}
+
+.justify-content-center{
+    background-color: #A71B31;
+}

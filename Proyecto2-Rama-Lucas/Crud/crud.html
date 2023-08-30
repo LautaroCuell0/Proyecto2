@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/Inicio/inicio.css">
+    <link rel="stylesheet" href="/Crud/crud.css">
+    <!-- link boostrap   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- link bosotrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/85493bdd25.js" crossorigin="anonymous"></script>
+    <title>CRUD</title>
+    <link rel="shortcut icon" href="/imgs-inicio/logo-2-removebg-preview (1).png">
+</head>
+
+<body>
+
+    <!-- img logo y boton user -->
+    <div class="cover-logo">
+        <div class="logo">
+            <a href="/index.html"><img src="/imgs-inicio/logo 1.jpeg" alt=""></a>
+        </div>
+    </div>
+
+
+    <div class="cover-crud">
+        <div>
+            <div class="d-flex justify-content-center m-3">
+                <button class="btn btn-primary botonCrud" data-bs-toggle="modal" data-bs-target="#addSongModal">Agregar
+                    canción</button>
+            </div>
+
+            <div class="contenido">
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Song Modal -->
+    <div class="modal fade" id="addSongModal" tabindex="-1" aria-labelledby="addSongModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-around">
+                    <div></div>
+                    <div>
+                        <h5 class="modal-title" id="addSongModalLabel">AGREGAR CANCIÓN</h5>
+                    </div>
+                    <div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+
+                </div>
+                <div class="modal-body">
+                    <form id="addSongForm">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="autor" class="form-label">Autor</label>
+                            <input type="text" class="form-control" id="autor" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="categoria" class="form-label">Categoría</label>
+                            <input type="text" class="form-control" id="categoria" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="duracion" class="form-label">Duración</label>
+                            <input type="text" class="form-control" id="duracion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="imagen" class="form-label">URL de la Imagen</label>
+                            <input type="url" class="form-control" id="imagen" required>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary botonAgregarCancion">Agregar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

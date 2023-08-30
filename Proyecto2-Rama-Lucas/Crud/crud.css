@@ -1,0 +1,100 @@
+body{
+    background-color: #DECBA7 !important;
+}
+.botonCrud{
+    background-color: #941121 !important;
+    border: none !important;
+    color: #DECBA7 !important;
+    list-style: none;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mukta', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Righteous', cursive;
+  font-family: 'Vesper Libre', serif;
+  
+}
+.botonCrud:hover{
+    background-color: #A71B31!important;
+    color: #ebe3d6;
+}
+
+.fuenteDivCrud{
+    list-style: none;
+      font-style: italic;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Mukta', sans-serif;
+      font-family: 'Nunito', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
+      font-family: 'Poiret One', cursive;
+      font-family: 'Righteous', cursive;
+      font-family: 'Vesper Libre', serif;
+      color: #DECBA7;
+      font-size: medium;
+      display: flex;
+      justify-content: center;
+
+}
+
+.botonEdiYEli{
+    background-color: #DECBA7 !important;
+    color: #A71B31 !important;
+    border: none !important;
+}
+.modal-header{
+    background-color: #DECBA7;
+}
+.modal-title{
+    color: #941121;
+    list-style: none;
+      font-style: italic;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Mukta', sans-serif;
+      font-family: 'Nunito', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
+      font-family: 'Poiret One', cursive;
+      font-family: 'Righteous', cursive;
+      font-family: 'Vesper Libre', serif;
+}
+.modal-body{
+    background-color:  #941121;
+}
+.form-label{
+    color: #DECBA7;
+    list-style: none;
+      font-style: italic;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Mukta', sans-serif;
+      font-family: 'Nunito', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
+      font-family: 'Poiret One', cursive;
+      font-family: 'Righteous', cursive;
+      font-family: 'Vesper Libre', serif;
+      color: #DECBA7;
+      font-size: medium;
+}
+.btn-close:hover{
+    background-color: #941121;
+}
+
+.botonAgregarCancion{
+    background-color: #DECBA7 !important;
+    color:#A71B31 !important;
+    font-size: medium;
+    border: none !important;
+    list-style: none;
+      font-style: italic;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Mukta', sans-serif;
+      font-family: 'Nunito', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
+      font-family: 'Poiret One', cursive;
+      font-family: 'Righteous', cursive;
+      font-family: 'Vesper Libre', serif;
+}
+
+.botonAgregarCancion:hover{
+    background-color: #c9af7e !important;
+}
