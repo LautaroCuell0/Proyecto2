@@ -1,0 +1,34 @@
+*{
+    background-color:  #DECBA7;
+}
+.img-detalles{
+    width: 300px;
+    height: 300px;
+}
+.div-img-detalles{
+    margin-bottom: 2%;
+}
+.texto-detalle{
+    opacity: 0.6;
+}
+.div-padre-detalles{
+    height: 100vh;
+    width: 100vw;
+}
+#btn-detalles-volver{
+    color: #A71B31;
+    border:solid 1px #A71B31;
+    border-radius: 10px;
+    padding-inline: 30px;
+    padding-block: 8px;
+    background-color: #DECBA7;
+}
+#btn-detalles-volver:hover{
+    color: #DECBA7;
+    background-color: #A71B31;
+}
+
+.justify-content-center{
+    background-color: #DECBA7;
+}
+
