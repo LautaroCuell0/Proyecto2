@@ -61,7 +61,7 @@ class song {
        </div>
        <div class="cover-icons">
  
-           <button class="button-fav" onclick='agregarFav(idunico)'><i class="fa-solid fa-heart"></i></i></button>
+           <button class="button-fav" onclick="agregarfav(${song.idunico})"><i class="fa-solid fa-heart"></i></i></button>
        </div>
    </div>
     </div>
@@ -71,5 +71,66 @@ class song {
       padreContainer.appendChild(newcardmain);
     });
   }
+
+
+  let favoritos = [];
+const storedFavs = JSON.parse(localStorage.getItem("favoritos"));
+
+if (storedFavs) {
+  favoritos = storedFavs;
+}
+renderFavsInModal();
+
+function agregarfav(idunico){
+  let song = songList.find((song) => song.idunico == idunico);
+  favoritos.push(song);
+  SaveSongFavsToLocalStorage();
+  renderFavsInModal();
+}
+
+function renderFavsInModal() {
+  const favModalContainer = document.querySelector(".tarjetasfav");
+  favModalContainer.innerHTML = ""; // Limpiar el contenido anterior del modal
+
+  // Obtener datos de favoritos desde el Local Storage
+  const storedFavs = JSON.parse(localStorage.getItem("favoritos"));
+
+  if (storedFavs) {
+    storedFavs.forEach((song) => {
+      const newCard = document.createElement("div");
+      newCard.classList.add("card", "m-2");
+      newCard.style.width = "18rem";
+      newCard.innerHTML = `
+          <img src=${song.imagen} class="card-img-top imagenProducto" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">${song.nombre}</h5>
+            <p class="card-text">${song.autor}</p>
+            <span><strong>${song.categoria}</strong></span>
+            <br>
+            <button class="btn btn-primary my-4"><i class="fa-solid fa-play"></i></button>
+            <button class="btn btn-danger my-4" onclick="deleteFav(${song.idunico})">X</button>
+          </div>
+        `;
+
+      favModalContainer.appendChild(newCard);
+    });
+  }
+}
+
+function SaveSongFavsToLocalStorage() {
+  localStorage.setItem("favoritos", JSON.stringify(favoritos));
+}
+
+function deleteFav(idunico) {
+  //console.log(idunico)
+  const songIndex = favoritos.findIndex((song) => song.idunico == idunico);
+  //console.log(songIndex)
+
+  if (songIndex !== -1) {
+    favoritos.splice(songIndex, 1);
+    SaveSongFavsToLocalStorage();
+    renderFavsInModal();
+  }
+}
 
   

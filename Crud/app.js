@@ -10,22 +10,7 @@ class song {
 }
 
 let songList = [
-  new song(
-    "Nombre",
-    "Autor",
-    "Categoria",
-    "3:29",
-    "3524",
-    "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9f/e4/4b/9fe44b3f-0138-8301-1a13-ae9cc7409571/197187668199.jpg/1200x1200bf-60.jpg"
-  ),
-  new song(
-    "Noviembre sin ti",
-    "Luis Fonsi",
-    "Romance",
-    "10:00",
-    "12345",
-    "https://yt3.googleusercontent.com/csT1zuQU13zkLlGx0rfeBNiemt4BnzRW1tujMd9OfzOnC2LxDHtVvw8rODkaC16i8Ngyq-uenuwK=s576"
-  ),
+ 
 ];
 rendersongs();
 
@@ -46,23 +31,18 @@ function rendersongs() {
     const newsongcard = document.createElement("div");
     newsongcard.id = song.idunico;
     //le agregamos la inoformacion
-    newsongcard.classList.add("contenedor", "mt-2");
+    newsongcard.classList.add("contenedor");
     newsongcard.style.width = "100%";
-    newsongcard.style.height = "15vh";
+    newsongcard.style.height = "10rem";
     newsongcard.innerHTML = `
             <div class="caja"><img src=${song.imagen} class="fotos" alt="Imagen album"></div>
-            <div class="caja">  <h5 class="fuenteDivCrud">${song.nombre}</h5></div>
-            <div class="caja">  <h5 class="fuenteDivCrud">${song.autor}</h5></div>
-            <div class="caja">  <h5 class="fuenteDivCrud">${song.categoria}</h5></div>
-            <div class="caja">  <h5 class="fuenteDivCrud">${song.duracion}</h5></div>
+            <div class="caja">  <h5 >${song.nombre}</h5></div>
+            <div class="caja">  <h5 >${song.autor}</h5></div>
+            <div class="caja">  <h5 >${song.categoria}</h5></div>
+            <div class="caja">  <h5 >${song.duracion}</h5></div>
             <div class="caja">  
-            <div class="d-flex flex-direction-row">
-            <button class="btn btn-primary m-1 botonEdiYEli" onclick="editSong(${song.idunico})"><i class="fa-regular fa-pen-to-square"></i></button>
-            <button class="btn btn-danger m-1 botonEdiYEli" onclick="deleteSong(${song.idunico})"><i class="fa-regular fa-trash-can"></i></button>
-            </div>
-            </div>
-            
-           
+            <button class="btn btn-primary m-1" onclick="editSong(${song.idunico})">Editar</button>
+            <button class="btn btn-danger m-1" onclick="deleteSong(${song.idunico})">Eliminar</button></div>
             `;
     //buscamos al padre en el html
     const padreContainer = document.querySelector(".contenido");
@@ -70,23 +50,25 @@ function rendersongs() {
   });
 }
 
+//se crea la funcion para borrar elementos de la lista
 
-   
-
+  function deleteSong(idunico) {
+    const songIndex = songList.findIndex((song) => song.idunico == idunico);
     
-
-function deleteSong(idunico) {
-  //console.log(idunico)
-  const songIndex = songList.findIndex((song) => song.idunico == idunico);
-  //console.log(songIndex)
-
-  if (songIndex !== -1) {
-    songList.splice(songIndex, 1);
-    rendersongs();
-    saveSongListToLocalStorage();
+    if (songIndex !== -1) {
+      const confirmation = confirm("¿Estás seguro de que deseas eliminar esta canción?");
+      
+      if (confirmation) {
+        songList.splice(songIndex, 1);
+        rendersongs();
+        saveSongListToLocalStorage();
+      }
+    }
   }
-}
 
+
+
+// se crea la funcion para editar los elementos de la lista
 function editSong(idunico) {
   const songToEdit = songList.find((song) => song.idunico == idunico);
 
@@ -117,6 +99,7 @@ function editSong(idunico) {
   songToEdit.duracion = updatedDuracion;
   songToEdit.imagen = updatedImagen;
 
+  
   rendersongs();
   saveSongListToLocalStorage();
 }

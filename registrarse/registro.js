@@ -66,7 +66,7 @@ function iniciarSesion(event){
          return alert('informacion erronea');
     }
     if (validUsers.isAdmin) {
-        alert(`¡Bienvenido Admin ${validUsers.email}! Acceso a la sección especial.`);
+        alert(`¡Bienvenido Admin ${validUsers.email}! 🤠`);
         // Redirige a la sección especial para administradores
         window.location.assign(window.location.origin + '/Crud/crud.html');
     } else {
